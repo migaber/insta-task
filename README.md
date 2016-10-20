@@ -19,7 +19,7 @@
 
   - User part:
     - [x] Displays the first user in the list data by default after the list is loaded.
-    - [-] User data is loaded by the request ( https://api.github.com/users/{user-id} ), try it: https://api.github.com/users/1.
+    - [ ] User data is loaded by the request ( https://api.github.com/users/{user-id} ), try it: https://api.github.com/users/1.
     - [x] This part displays the User data: user id, user avatar image, name, email, and created at.
 
 - pages' URLs:
@@ -29,14 +29,14 @@
   - [x] user details: '/users/{user-id}'
   - [x] Redirect from '/home' to '/'.
   - [x] Redirect from '/about/' to '/about'.
-  - [-] Redirect from '/users/{not_a_number}' to '/users/{valid-user-id}'
+  - [ ] Redirect from '/users/{not_a_number}' to '/users/{valid-user-id}'
   - [x] Redirect from any invalid url to the home page '/'
 
 - [x] Use angular-ui-router.
 - [x] Use Sass.
 - [x] Use Foundation => 6.0.0 with flex-box grid.
 - [x] Create unit tests that validates all your code (mock GitHub requests).
-- [] Consider the project to be SCALEABLE.
+- [ ] Consider the project to be SCALEABLE.
 
 ### Preferred:
 - Style your pages as much as you can with the only necessary css.
