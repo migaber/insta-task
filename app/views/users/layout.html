@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="large-2 medium-4 small-6 columns sidebar u-nopadding--right">
+        <div class="users-list list">
+            <div class="listItem " ng-repeat="user in users">
+                <img ng-src="{{user.avatar_url}}" class="listItem__avatar u-thumb u-thumb--45 u-thumb--rounded" alt="">
+                <p class="listItem__title u-nomargin--bottom">
+                    <a ui-sref="users.details({userName:user.login})">
+                        {{user.login}}
+                    </a>
+                </p>
+            </div>
+            <a class="button expanded button--more u-nomargin--bottom" ng-click="more()" ng-disabled="load">Load More</a>
+        </div>
+    </div>
+    <div class="large-10 medium-8 small-6 columns">
+        <div ui-view class="preview">
+            <div class="preview__empty" ng-class="{'hide' : !empty}">
+                <div class="text-center">
+                    <div>
+                        <i class="ion-social-github u-fontsize--4x"></i>
+                    </div>
+                    <h1>Select a user</h1>
+                </div>
+            </div>
+            <div class="preview__container text-center" ng-class="{'hide' : empty}">
+                <div class="profile">
+                    <img class="profile__avatar u-thumb u-thumb--200 u-thumb--bordered" ng-src="{{user.avatar_url}}" alt="{{user.name}}">
+                    <h3 class="profile__title">
+                        {{user.name}}
+                        <small><a href="{{user.html_url}}" target="_blank">@{{user.login}}</a></small>
+                    </h3>
+                    <div class="profile__info text-left">
+                        <div class="profile__info__item"><i class="ion ion-email"></i> {{user.email}}</div>
+                        <div class="profile__info__item">{{user.created_at}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

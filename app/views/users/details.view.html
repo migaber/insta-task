@@ -1,0 +1,13 @@
+<div class="preview__container text-center">
+    <div class="profile">
+        <img class="profile__avatar u-thumb u-thumb--200 u-thumb--bordered" ng-src="{{user.avatar_url}}" alt="{{user.name}}">
+        <h3 class="profile__title">
+            {{user.name}}
+            <small><a href="{{user.html_url}}" target="_blank">@{{user.login}}</a></small>
+        </h3>
+        <div class="profile__info text-left">
+            <div class="profile__info__item"><i class="ion ion-email"></i> {{user.email}}</div>
+            <div class="profile__info__item">{{user.created_at}}</div>
+        </div>
+    </div>
+</div>
