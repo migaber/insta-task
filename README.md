@@ -1,13 +1,14 @@
 # Github User listing
 
 ### Steps for installation
+- clone this repo
 - `npm install` , `bower install`
 - `grunt serve` to run the application in development module
 - `grunt test` to run the unit and e2e tests
 - `grunt build` to generate the dist files
 
 
-# Requirements: Create Angular app with the following features:
+### Requirements: Create Angular app with the following features:
 - It has 3 main pages Home, Users, About.
 - The 3 pages has:
   - A fixed header in common with:
